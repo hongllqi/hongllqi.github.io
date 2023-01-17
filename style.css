@@ -10,6 +10,22 @@
     font-style: italic;
 }
 
+.python {
+    font-size: 2em;
+}
+
+.sql {
+    font-size: 2em;
+}
+
+.c {
+    font-size: 2em;
+}
+
+.metoAgil {
+    font-size: 2em;
+}
+
 body {
     background-color: #49D49D;
 }
