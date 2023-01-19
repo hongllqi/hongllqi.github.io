@@ -26,6 +26,12 @@
     font-size: 2em;
 }
 
+.desc {
+    position: absolute;
+    left: 670px;
+    top: 100px;
+}
+
 body {
     background-color: #49D49D;
 }
