@@ -31,6 +31,9 @@
     left: 670px;
     top: 100px;
 }
+.name {
+    text-align: center;
+}
 
 body {
     background-color: #49D49D;
