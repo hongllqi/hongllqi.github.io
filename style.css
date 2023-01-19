@@ -26,6 +26,25 @@
     font-size: 2em;
 }
 
+.desc {
+    position: absolute;
+    left: 670px;
+    top: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+.name {
+    text-align: center;
+}
+.photo {
+    padding: 20px;
+    background-color: cyan;
+}
+
+ul li:nth-child(odd) {
+    color: red;
+}
+
 body {
     background-color: #49D49D;
 }
