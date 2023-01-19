@@ -39,7 +39,10 @@
 .photo {
     padding: 20px;
     background-color: cyan;
-    margin: 10px;
+}
+
+ul li:nth-child(odd) {
+    color: red;
 }
 
 body {
