@@ -1,0 +1,14 @@
+.color {
+  display: inline-block;
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
+}
+
+.pixel {
+  display: inline-block;
+  border: 1px solid black;
+  height: 40px;
+  width: 40px;
+  margin-top: -5px;
+}
