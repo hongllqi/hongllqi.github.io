@@ -9,27 +9,41 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <a href="#sobre-mim">Sobre mim</a>
-  <a href="#pagina">Página que eu gosto</a>
-  <h1 class="meuNome">Tryber</h1>
-  <div class="photo">
-      <img src="foto.jpg" alt="Curtindo um som" id="foto">
-  </div>
-  <div class="name">
-      <p class="nome">Li Hong</p>
-  </div>
-  <div class="desc">
-    <p class="descricao"><strong><em>Artista</em></strong>, apaixonado por diversas formas de arte entre elas, a programação.</p>
-  </div>
-  <p class="resido"><strong>Campos dos Goytacazes - RJ</strong></p>
-  <h2>Lista de habilidades</h2>
-  <ul>
-    <li class="python">Python</li>
-    <li class="sql">SQL</li>
-    <li class="c">C, C++, C#</li>
-    <li class="metoAgil">Metodologias ágeis</li>
-  </ul>
-  <a href="#minha-foto">Minha foto</a>
-  <a href="https://blog.betrybe.com/carreira/frontend/" target="_blank">Artigo legal</a>
+  <header class="d-flex justify-content-center align-items-start text-bg-primary p-3">
+    <h1 class="meuNome">Hong Li</h1>
+  </header>
+  <main class="d-flex justify-content-center align-items-baseline text-bg-info">
+    <section class="d-flex flex-column align-items-center text-bg-light p-3">
+      <section class="photo">
+          <img src="foto.jpg" class="rounded" alt="Curtindo um som" id="foto">
+      </section>
+      <section class="name">
+          <p class="nome">Iae! Meu nome é Li</p>
+      </section>
+      <section class="desc">
+        <p class="descricao">Sou um <strong><em>artista</em></strong>, apaixonado por diversas formas de arte entre elas, a programação.</p>
+      </section>
+      <p class="resido"><strong>Campos dos Goytacazes - RJ</strong></p>
+      <h2>Habilidades</h2>
+      <ul class="list-group list-group-horizontal-x1 flex-column align-items-center">
+        <li class="list-group-item">
+          <img src="https://skillicons.dev/icons?i=html,css,js">
+        </li>
+        <li class="list-group-item">
+          <img src="https://skillicons.dev/icons?i=react,nodejs,php">
+        </li>
+        <li class="list-group-item">
+          <img src="https://skillicons.dev/icons?i=python,unity">
+        </li>
+        <li class="list-group-item">
+          <img src="https://skillicons.dev/icons?i=c,cs,cpp">
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="d-flex justify-content-center">
+    <a href="#minha-foto">Minha foto</a>
+    <a href="https://blog.betrybe.com/carreira/frontend/" target="_blank">Artigo legal</a>
+  </footer>
 </body>
 </html>
