@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TrybeWarts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header d-flex align-items-center">
+        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo da Trybewarts">
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <form class="trybewarts-login">
+            <section class="d-flex align-items-center">
+                <input id="login" class="form-control" type="text" name="email" placeholder="Email" autocomplete="off">
+                <input id="senha" class="form-control" type="password" name="password" placeholder="Senha" autocomplete="off">
+                <button id="buttonEntrar" class="btn btn-primary">Entrar</button>
+            </section> 
+        </form>
+    </header>
+    <main class="main d-flex">
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts">
+        <form id="evaluation-form">
+            <section class="d-flex flex-column align-self-center">
+                <section class="d-flex">
+                    <input id="input-name" placeholder="Nome" autocomplete="off">
+                    <input id="input-lastname" placeholder="Sobrenome" autocomplete="off">
+                </section>
+                <section class="d-flex">
+                    <input id="input-email" placeholder="Email" autocomplete="off">
+                    <label for="house">Casa: 
+                        <select id="house">
+                            <option id="gitnoria-house">Gitnória</option>
+                            <option id="reactpuff-house">Reactpuff</option>
+                            <option id="corvinode-house">Corvinode</option>
+                            <option id="pytherina-house">Pytherina</option>
+                        </select>
+                    </label>
+                </section>
+            </section>
+            <hr>
+            <section class="d-flex justify-content-between">
+                <section class="d-flex flex-column">
+                    <label id="label-family">Qual sua família?</label>
+                    
+                    
+                    <label for="Frontend"><input id="Frontend" type="radio" name="family" value="Frontend" autocomplete="off">Frontend</label>                    
+               
+                    
+                    <label for="Backend"><input id="Backend" type="radio" name="family" value="Backend" autocomplete="off">Backend</label>                    
+               
+                    
+                    <label for="FullStack"><input id="FullStack" type="radio" name="family" value="FullStack" autocomplete="off">FullStack</label>                    
+                </section>
+                <section class="d-flex flex-column">
+                    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <section class="d-flex justify-content-evenly">
+                        <label for="cHoFs">
+                            <input id="cHoFs" type="checkbox" class="subject" value="HoFs">HoFs
+                        </label>
+                        <label for="cJest">
+                            <input id="cJest" type="checkbox" class="subject" value="Jest">Jest
+                        </label>
+                        <label for="cPromises">
+                            <input id="cPromises" type="checkbox" class="subject" value="Promises">Promises
+                        </label>
+                    </section>
+                    <section class="d-flex justify-content-evenly">
+                        <label for="cReact">
+                            <input id="cReact" type="checkbox" class="subject" value="React">React
+                        </label>
+                        <label for="cSQL">
+                            <input id="cSQL" type="checkbox" class="subject" value="SQL">SQL
+                        </label>
+                        <label for="cPython">
+                            <input id="cPython" type="checkbox" class="subject" value="Python">Python
+                        </label>
+                    </section>
+                </section>
+            </section>
+            <hr>
+            <section class="d-flex flex-column">
+                <section class="radio-avaliacao-container">
+                    <label id="label-rate">Como você avalia a Trybewarts?</label>
+                    <label for="v1">
+                        <input id="v1" type="radio" value="1" name="rate">1
+                    </label>
+                    <label for="v2">
+                        <input id="v2" type="radio" value="2" name="rate">2
+                    </label>
+                    <label for="v3">
+                        <input id="v3" type="radio" value="3" name="rate">3
+                    </label>
+                    <label for="v4">
+                        <input id="v4" type="radio" value="4" name="rate">4
+                    </label>
+                    <label for="v5">
+                        <input id="v5" type="radio" value="5" name="rate">5
+                    </label>
+                    <label for="v6">
+                        <input id="v6" type="radio" value="6" name="rate">6
+                    </label>
+                    <label for="v7">
+                        <input id="v7" type="radio" value="7" name="rate">7
+                    </label>
+                    <label for="v8">
+                        <input id="v8" type="radio" value="8" name="rate">8
+                    </label>
+                    <label for="v9">
+                        <input id="v9" type="radio" value="9" name="rate">9
+                    </label>
+                    <label for="v10">
+                        <input id="v10" type="radio" value="10" name="rate">10
+                    </label>
+                </section>
+                <section class="d-flex flex-column">
+                    <label class="textarea">Deixe seu comentário:</label>
+                    <textarea maxlength="500"></textarea>
+                </section>
+                <label id="label-infos">Você concorda com o uso das informações acima?
+                    <input type="checkbox" id="agreement">
+                </label>
+                <button id="submit-btn" class="btn btn-primary" type="submit" disabled="true">Enviar</button>
+            </section>
+        </form>
+    </main>
+    <footer class="d-flex justify-content-center text-bg-dark">Direitos reservados à Trybewarts©</footer>
+    <script src="script.js"></script>
+</body>
+</html>
